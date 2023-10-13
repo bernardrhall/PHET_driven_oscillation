@@ -1,5 +1,13 @@
-<script src="https://unpkg.com/@ruffle-rs/ruffle">
+<script>
+  window.RufflePlayer = window.RufflePlayer || {};
 
-<iframe src="resonance(1).swf" style="height:400px;width:100%" title="Iframe Example"></iframe>
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("resonance(1).swf");
+    });
 </script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
