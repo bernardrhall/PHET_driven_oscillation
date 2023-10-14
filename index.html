@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <script>
-  function loadPlayer(){
   window.RufflePlayer = window.RufflePlayer || {};
 
     window.addEventListener("DOMContentLoaded", () => {
@@ -11,14 +10,13 @@
         let container = document.getElementById("container");
         container.appendChild(player);
         player.load("resonance(1).swf");
-        console.log("load function successful")
+      console.log("load function successful")
     });
-  }
 </script>
 <script src="ruffle.js"></script>
 </head>
   
-<body onload="loadPlayer()">
+<body>
   <p>Test</p>
 </body>
 
