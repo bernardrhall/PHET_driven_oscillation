@@ -1,4 +1,8 @@
+<!Doctype html>
+<html lang="en">
+<head>
 <script>
+  function loadPlayer(){
   window.RufflePlayer = window.RufflePlayer || {};
 
     window.addEventListener("DOMContentLoaded", () => {
@@ -8,6 +12,11 @@
         container.appendChild(player);
         player.load("resonance(1).swf");
     });
+  }
 </script>
 <script src="ruffle.js"></script>
+</head>
+  
+<body onload="loadPlayer()"></body>
 
+</html>
